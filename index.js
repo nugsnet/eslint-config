@@ -2,6 +2,7 @@ module.exports = {
     plugins: [
         "@typescript-eslint"
     ],
+    parser: "@typescript-eslint/parser",
     parserOptions: {
         "parser": "@typescript-eslint/parser",
         "ecmaVersion": 2021,

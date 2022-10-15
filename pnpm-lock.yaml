@@ -7,12 +7,14 @@ specifiers:
   eslint: ^8.25.0
   eslint-plugin-vue: ^9.6.0
   typescript: ^4.8.4
+  vue-eslint-parser: ^9.1.0
 
 dependencies:
   '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
   '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
   '@vue/eslint-config-typescript': 11.0.2_qsmcthc5ijamuzfurbvbpwqwnm
   eslint-plugin-vue: 9.6.0_eslint@8.25.0
+  vue-eslint-parser: 9.1.0_eslint@8.25.0
 
 devDependencies:
   eslint: 8.25.0
