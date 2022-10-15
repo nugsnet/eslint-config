@@ -108,18 +108,18 @@ module.exports = {
             "never"
         ]
     },
-    "overrides": [
+    overrides: [
         {
-            "parser": "@typescript-eslint/parser",
-            "files": [
+            parser: "@typescript-eslint/parser",
+            files: [
                 "**/*.ts",
                 "**/*.tsx"
             ],
-            "extends": [
+            extends: [
                 "plugin:@typescript-eslint/eslint-recommended",
                 "plugin:@typescript-eslint/recommended"
             ],
-            "rules": {
+            rules: {
                 "@typescript-eslint/indent": [
                     "error",
                     2,
