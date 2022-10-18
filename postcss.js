@@ -1,5 +1,5 @@
 module.exports = {
-    parser: "postcss-scss",
+    parser: require("postcss-scss"),
     plugins: [
         require('@csstools/postcss-sass')({
             "syntax": "postcss-scss"
