@@ -56,5 +56,5 @@ Create workflow file and add next settings to enable formatter:
 ### Generate d.ts files
 
 ```sh
- npx -p typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types --target esnext
+npx -p typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir ./ --target esnext
 ```
