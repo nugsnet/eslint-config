@@ -1,7 +1,14 @@
 require("@rushstack/eslint-patch/modern-module-resolution")
 
+const ts = require('./ts')
+const vue = require('./vue')
+
 const config = {
-  root: true,
+  globals: {
+    "process": "readonly",
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
   env: {
     es2022: true,
     browser: true
@@ -103,20 +110,17 @@ const config = {
   overrides: [
     {
       files: [
-        "**/*.vue"
+        "**/*.vue",
+        "*.vue"
       ],
-      extends: [
-        "./vue"
-      ]
+      ...vue
     },
     {
       files: [
         "**/*.ts",
         "**/*.tsx"
       ],
-      extends: [
-        "./ts"
-      ]
+      ...ts
     }
   ]
 }
