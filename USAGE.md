@@ -5,11 +5,11 @@
 Install package:
 
 ```sh
-pnpm add -D https://github.com/air-lab/eslint-config.git
+pnpm add -D https://github.com/nugsnet/eslint-config.git
 ```
 
 ```sh
-npm i -D https://github.com/air-lab/eslint-config.git
+npm i -D https://github.com/nugsnet/eslint-config.git
 ```
 
 Create `.eslintrc` file:

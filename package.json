@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-airlab",
+  "name": "eslint-config-nugsnet",
   "version": "1.3.3",
   "description": "Eslint Config",
   "main": "index.js",
