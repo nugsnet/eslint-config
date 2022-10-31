@@ -1,4 +1,4 @@
-# Config Usage 
+# Config Usage
 
 ## Microsoft VS Code
 
@@ -25,31 +25,31 @@ Create workflow file and add next settings to enable formatter:
 
 ```json
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"extensions": {
-		"recommendations": [
-			"Vue.vscode-typescript-vue-plugin",
-			"dbaeumer.vscode-eslint"
-		]
-	},
-	"settings": {
-		"eslint.enable": true,
-		"eslint.format.enable": true,
-		"[typescript]": {
-			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-		},
-		"[vue]": {
-			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-		},
-		"emmet.includeLanguages": {
-			"typescript": "html"
-		},
-		"typescript.tsdk": "node_modules/typescript/lib",
-	}
+ "folders": [
+  {
+   "path": "."
+  }
+ ],
+ "extensions": {
+  "recommendations": [
+   "Vue.vscode-typescript-vue-plugin",
+   "dbaeumer.vscode-eslint"
+  ]
+ },
+ "settings": {
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "[typescript]": {
+   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[vue]": {
+   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "emmet.includeLanguages": {
+   "typescript": "html"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+ }
 }
 ```
 
