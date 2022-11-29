@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-nugsnet",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "Eslint Config",
   "main": "index.js",
   "type": "commonjs",
   "keywords": [
     "eslint",
+    "stylelint",
     "typescript",
     "vue",
     "javascript"
@@ -18,20 +19,20 @@
   },
   "optionalDependencies": {
     "postcss-html": "^1.5.0",
-    "stylelint": "^14.14.1"
+    "stylelint": "^14.15.0"
   },
   "dependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
     "@csstools/postcss-sass": "^5.0.1",
     "@rushstack/eslint-patch": "^1.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "@vue/eslint-config-typescript": "^11.0.2",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.27.0",
-    "eslint-plugin-vue": "^9.7.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-vue": "^9.8.0",
     "postcss": "^8.4.19",
     "postcss-advanced-variables": "^3.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -39,15 +40,15 @@
     "postcss-input-range": "^5.0.0",
     "postcss-pxtorem": "^6.0.0",
     "postcss-scrollbar": "^0.5.1",
-    "postcss-scss": "^4.0.5",
+    "postcss-scss": "^4.0.6",
     "postcss-syntax": "^0.36.2",
     "sass": "^1.56.1",
-    "stylelint": "^14.14.1",
+    "stylelint": "^14.15.0",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-config-standard-vue": "^1.0.0",
     "vue-eslint-parser": "^9.1.0"
   },
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   }
 }
