@@ -24,6 +24,7 @@ module.exports = {
                 ]
             }
         ],
+        "comma-dangle": ["error", "only-multiline"],
         "@typescript-eslint/type-annotation-spacing": [
             "error",
             {
