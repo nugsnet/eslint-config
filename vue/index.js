@@ -44,6 +44,14 @@ module.exports = {
                 "multiline": "never"
             }
         ],
+        "vue/max-attributes-per-line": ["error", {
+            "singleline": {
+                "max": 5
+            },
+            "multiline": {
+                "max": 1
+            }
+        }],
         "vue/multi-word-component-names": 0
     }
 }
