@@ -4,8 +4,11 @@ module.exports = {
         require('@csstools/postcss-sass')({
             "syntax": "postcss-scss"
         }),
-        require("autoprefixer")({
-            "grid": "autoplace"
+        require('postcss-preset-env')({
+            autoprefixer: {
+                flexbox: false,
+                grid: false
+            }
         }),
         require("postcss-flexbugs-fixes"),
         require("postcss-input-range"),
