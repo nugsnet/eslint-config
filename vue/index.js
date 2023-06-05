@@ -17,6 +17,7 @@ module.exports = {
     ],
     rules: {
         "indent": "off",
+        "vue/no-setup-props-destructure": 0,
         "vue/script-indent": [
             "error",
             2,
