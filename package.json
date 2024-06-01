@@ -29,7 +29,7 @@
   "dependencies": {
     "@babel/core": "^7.24.5",
     "@babel/eslint-parser": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-env": "^7.24.6",
     "@csstools/postcss-sass": "^5.1.1",
     "@rushstack/eslint-patch": "^1.10.3",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
