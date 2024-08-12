@@ -14,7 +14,7 @@
   "author": "Yan Zhabin",
   "license": "MIT",
   "perDependencies": {
-    "eslint": ">=8",
+    "eslint": ">=9",
     "postcss": ">=8"
   },
   "optionalDependencies": {
@@ -31,12 +31,15 @@
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.3",
     "@csstools/postcss-sass": "^5.1.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.9.0",
     "@rushstack/eslint-patch": "^1.10.4",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.9.0",
     "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.9.0",
     "postcss": "^8.4.41",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-html": "^1.7.0",
