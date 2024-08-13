@@ -13,14 +13,6 @@ export default [
   ...ts,
   ...vue,
   {
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'bin',
-      'bundle',
-      'src/assets'
-    ],
     rules: {
       'no-console': [
         'warn', {
@@ -100,6 +92,7 @@ export default [
         'never'
       ],
       'no-unused-expressions': 'off',
+      'no-unused-vars': ['error', { 'caughtErrors': 'none' }],
       '@typescript-eslint/no-unused-expressions': 'off'
     }
   }

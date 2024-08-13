@@ -18,6 +18,18 @@ export default tseslint.config(
           'TemplateLiteral *'
         ]
       }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          'args': 'all',
+          'argsIgnorePattern': '^_',
+          'caughtErrors': 'none',
+          'caughtErrorsIgnorePattern': '^_',
+          'destructuredArrayIgnorePattern': '^_',
+          'varsIgnorePattern': '^_',
+          'ignoreRestSiblings': true
+        }
+      ],
       '@stylistic/comma-spacing': ['error', { 'before': false, 'after': true }],
       '@stylistic/object-curly-spacing': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'only-multiline'],
