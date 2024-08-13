@@ -4,8 +4,8 @@ import tseslint from 'typescript-eslint'
 
 
 export default tseslint.config(
-  ...vue.configs['flat/recommended'],
-  ...vue.configs['flat/essential'],
+  // ...vue.configs['flat/recommended'],
+  // ...vue.configs['flat/essential'],
   ...tseslint.configs.recommended, {
     files: ['*.vue', '**/*.vue'],
     plugins: {
@@ -22,6 +22,7 @@ export default tseslint.config(
       },
     },
     rules: {
+      '@typescript-eslint/explicit-function-return-type': 'off',
       'vue/no-setup-props-destructure': 0,
       'vue/script-indent': [
         'error',
