@@ -21,13 +21,12 @@ export default tseslint.config(
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
+          'vars': 'all',
           'args': 'after-used',
-          'argsIgnorePattern': '^_',
-          'caughtErrors': 'none',
-          'caughtErrorsIgnorePattern': '^_',
-          'destructuredArrayIgnorePattern': '^_',
-          'varsIgnorePattern': '^_',
-          'ignoreRestSiblings': true
+          'ignoreRestSiblings': true,
+          'varsIgnorePattern': '^(Enum|Type|_)$',
+          'argsIgnorePattern': '^_$',
+          'caughtErrors': 'none'
         }
       ],
       '@stylistic/comma-spacing': ['error', { 'before': false, 'after': true }],
