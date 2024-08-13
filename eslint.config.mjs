@@ -92,7 +92,16 @@ export default [
         'never'
       ],
       'no-unused-expressions': 'off',
-      'no-unused-vars': ['error', { 'caughtErrors': 'none' }],
+      'no-unused-vars': ['error', {
+          'args': 'all',
+          'argsIgnorePattern': '^_',
+          'caughtErrors': 'none',
+          'caughtErrorsIgnorePattern': '^_',
+          'destructuredArrayIgnorePattern': '^_',
+          'varsIgnorePattern': '^_',
+          'ignoreRestSiblings': true
+        }
+      ],
       '@typescript-eslint/no-unused-expressions': 'off'
     }
   }
