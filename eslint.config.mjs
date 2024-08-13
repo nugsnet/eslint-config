@@ -86,6 +86,7 @@ export default [
         'error',
         'always'
       ],
+      'no-unused-expressions': 'off',
       'semi': [
         'error',
         'never'
