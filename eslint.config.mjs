@@ -6,6 +6,13 @@ import globals from 'globals'
 export default [
   { 
     files: ['**/*.{js,mjs,cjs,ts,tsx,mts,vue}'],
+    languageOptions: { 
+      globals: globals.browser 
+    }
+  },
+  ...ts,
+  ...vue,
+  {
     ignores: [
       'node_modules',
       'dist',
@@ -14,13 +21,6 @@ export default [
       'bundle',
       'src/assets'
     ],
-    languageOptions: { 
-      globals: globals.browser 
-    }
-  },
-  ...ts,
-  ...vue,
-  {
     rules: {
       'no-console': [
         'warn', {
