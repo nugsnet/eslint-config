@@ -1,29 +1,22 @@
-
-import vue from 'eslint-plugin-vue'
+import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
+import vue from 'eslint-plugin-vue'
 
 
-export default tseslint.config(
-  // ...vue.configs['flat/recommended'],
-  // ...vue.configs['flat/essential'],
-  ...tseslint.configs.recommended, {
-    files: ['*.vue', '**/*.vue'],
-    plugins: {
-      vue
-    },
-    languageOptions: 
-    {
-      parser: 'vue-eslint-parser',
-      ecmaVersion: 'latest',
-      parserOptions: {
-        parser: tseslint.parser,
-        projectService: true,
-        extraFileExtensions: ['.vue'],
-      },
+export default [
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...vue.configs['flat/recommended'],
+  ...vue.configs['flat/essential'],
+  {
+    files: ['**/*.vue'],
+    languageOptions: {
+      parserOptions: { parser: tseslint.parser }
     },
     rules: {
       '@typescript-eslint/explicit-function-return-type': 'off',
-      'vue/no-setup-props-destructure': 0,
+      'vue/multi-word-component-names': 'off',
+      'vue/no-setup-props-destructure': 'off',
       'vue/script-indent': [
         'error',
         2,
@@ -44,6 +37,11 @@ export default tseslint.config(
           'ignores': []
         }
       ],
+      'vue/html-closing-bracket-spacing': ['error', {
+        'startTag': 'never',
+        'endTag': 'never',
+        'selfClosingTag': 'always'
+      }],
       'vue/html-closing-bracket-newline': [
         'error',
         {
@@ -58,8 +56,7 @@ export default tseslint.config(
         'multiline': {
           'max': 1
         }
-      }],
-      'vue/multi-word-component-names': 0
+      }]
     }
   }
-)
+]

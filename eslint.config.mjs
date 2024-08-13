@@ -1,29 +1,15 @@
-import stylistic from '@stylistic/eslint-plugin'
-import babel from '@babel/eslint-parser'
-import globals from 'globals'
-
 import vue from './vue/index.mjs'
 import ts from './ts/index.mjs'
 
+import globals from 'globals'
 
 export default [
-  {
-    plugins: {
-      '@stylistic': stylistic
-    },
-    languageOptions: {
-      parser: {
-        babel
-      },
-      globals: globals.browser
+  { 
+    files: ['**/*.{js,mjs,cjs,ts,tsx,mts,vue}'],
+    languageOptions: { 
+      globals: globals.browser 
     },
     rules: {
-      '@stylistic/indent': ['error', 2, {
-        'SwitchCase': 1,
-        'ignoredNodes': [
-          'TemplateLiteral *'
-        ]
-      }],
       'no-console': [
         'warn', {
           allow: ['warn', 'error']
@@ -106,6 +92,6 @@ export default [
       ]
     }
   },
-  ...vue,
   ...ts,
+  ...vue
 ]
