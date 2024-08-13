@@ -7,6 +7,7 @@ export default tseslint.config(
   {
     rules: {
       'comma-dangle': ['error', 'only-multiline'],
+      '@typescript-eslint/no-unused-expressions': 'off',
       '@stylistic/type-annotation-spacing': [
         'error',
         {

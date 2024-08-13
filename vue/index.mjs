@@ -1,20 +1,25 @@
-import pluginVue from 'eslint-plugin-vue'
+
+import vue from 'eslint-plugin-vue'
 import tseslint from 'typescript-eslint'
 
-export default [
-  ...pluginVue.configs['flat/recommended'],
-  ...pluginVue.configs['flat/essential'],
-  ...tseslint.configs.recommended,
-  {
+
+export default tseslint.config(
+  ...vue.configs['flat/recommended'],
+  ...vue.configs['flat/essential'],
+  ...tseslint.configs.recommended, {
     files: ['*.vue', '**/*.vue'],
-    languageOptions: {
+    plugins: {
+      vue
+    },
+    languageOptions: 
+    {
       parser: 'vue-eslint-parser',
+      ecmaVersion: 'latest',
       parserOptions: {
-        parser: {
-          ts: '@typescript-eslint/parser', 
-          '<template>': 'espree'
-        }
-      }
+        parser: tseslint.parser,
+        projectService: true,
+        extraFileExtensions: ['.vue'],
+      },
     },
     rules: {
       'vue/no-setup-props-destructure': 0,
@@ -56,4 +61,4 @@ export default [
       'vue/multi-word-component-names': 0
     }
   }
-]
+)
