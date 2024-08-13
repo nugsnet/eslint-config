@@ -16,7 +16,11 @@ export default [
     ],
     languageOptions: { 
       globals: globals.browser 
-    },
+    }
+  },
+  ...ts,
+  ...vue,
+  {
     rules: {
       'no-console': [
         'warn', {
@@ -94,13 +98,12 @@ export default [
         'error',
         'always'
       ],
-      'no-unused-expressions': 'off',
       'semi': [
         'error',
         'never'
-      ]
+      ],
+      'no-unused-expressions': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off'
     }
-  },
-  ...ts,
-  ...vue
+  }
 ]
