@@ -92,16 +92,6 @@ export default [
         'never'
       ],
       'no-unused-expressions': 'off',
-      'no-unused-vars': ['error', 
-        {
-          'vars': 'all',
-          'args': 'after-used',
-          'ignoreRestSiblings': true,
-          'varsIgnorePattern': '^(Enum|Type|_)$',
-          'argsIgnorePattern': '^_$',
-          'caughtErrors': 'none'
-        }
-      ],
       '@typescript-eslint/no-unused-expressions': 'off'
     }
   }
