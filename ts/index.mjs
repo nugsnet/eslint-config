@@ -21,7 +21,7 @@ export default tseslint.config(
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
-          'args': 'all',
+          'args': 'after-used',
           'argsIgnorePattern': '^_',
           'caughtErrors': 'none',
           'caughtErrorsIgnorePattern': '^_',

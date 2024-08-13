@@ -93,7 +93,7 @@ export default [
       ],
       'no-unused-expressions': 'off',
       'no-unused-vars': ['error', {
-          'args': 'all',
+          'args': 'after-used',
           'argsIgnorePattern': '^_',
           'caughtErrors': 'none',
           'caughtErrorsIgnorePattern': '^_',
