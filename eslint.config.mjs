@@ -4,6 +4,9 @@ import globals from 'globals'
 import vue from './vue/index.mjs'
 import ts from './ts/index.mjs'
 
+console.log(ts)
+
+
 export default [
   {
     plugins: {
@@ -111,11 +114,8 @@ export default [
     }
   },
   {
-    files: ['*.ts', '**/*.ts'],
-    ...ts
-  },
-  {
     files: ['*.vue', '**/*.vue'],
     ...vue
-  }
+  },
+  ...ts,
 ]
