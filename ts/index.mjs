@@ -18,9 +18,9 @@ export default tseslint.config(
           'TemplateLiteral *'
         ]
       }],
-      'comma-dangle': ['error', 'only-multiline'],
-      'no-unused-expressions': 'off',
-      '@typescript-eslint/no-unused-expressions': 'off',
+      '@stylistic/ts/comma-spacing': ['error', { 'before': false, 'after': true }],
+      '@stylistic/ts/object-curly-spacing': ['error', 'always'],
+      '@stylistic/ts/comma-dangle': ['error', 'only-multiline'],
       '@stylistic/type-annotation-spacing': [
         'error',
         {

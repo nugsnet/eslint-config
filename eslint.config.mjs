@@ -35,6 +35,7 @@ export default [
           'objectsInObjects': true
         }
       ],
+      'comma-dangle': ['error', 'only-multiline'],
       'comma-spacing': [
         'error',
         {
@@ -65,10 +66,6 @@ export default [
       'arrow-parens': [
         'error',
         'as-needed'
-      ],
-      'comma-dangle': [
-        'error',
-        'never'
       ],
       'no-multi-spaces': 'error',
       'linebreak-style': [
