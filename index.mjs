@@ -8,8 +8,8 @@ import js from "@eslint/js"
 
 import { FlatCompat } from "@eslint/eslintrc"
 
-import vue from "./vue"
-import ts from "./ts"
+import vue from "./vue/index.mjs"
+import ts from "./ts/index.mjs"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
