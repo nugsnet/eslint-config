@@ -3,7 +3,6 @@
   "version": "1.6.0",
   "description": "Eslint Config",
   "main": "index.mjs",
-  "type": "module",
   "keywords": [
     "eslint",
     "stylelint",
