@@ -25,15 +25,6 @@ export default [
           allow: ['warn', 'error']
         }
       ],
-      'no-console': [
-        'warn',
-        {
-          'allow': [
-            'warn',
-            'error'
-          ]
-        }
-      ],
       'object-curly-spacing': [
         'error',
         'always',
@@ -111,9 +102,6 @@ export default [
       ]
     }
   },
-  {
-    files: ['*.vue', '**/*.vue'],
-    ...vue
-  },
+  ...vue,
   ...ts,
 ]
