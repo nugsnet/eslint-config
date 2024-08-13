@@ -1,4 +1,5 @@
 import stylistic from '@stylistic/eslint-plugin'
+import babel from '@babel/eslint-parser'
 import globals from 'globals'
 
 import vue from './vue/index.mjs'
@@ -11,6 +12,9 @@ export default [
       '@stylistic': stylistic
     },
     languageOptions: {
+      parser: {
+        babel
+      },
       globals: globals.browser
     },
     rules: {
