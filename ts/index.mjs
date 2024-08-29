@@ -29,19 +29,7 @@ export default tseslint.config(
       '@stylistic/comma-spacing': ['error', { 'before': false, 'after': true }],
       '@stylistic/object-curly-spacing': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'only-multiline'],
-      '@stylistic/type-annotation-spacing': [
-        'error',
-        {
-          'before': true,
-          'after': true,
-          'overrides': {
-            'arrow': {
-              'before': true,
-              'after': true
-            }
-          }
-        }
-      ]
+      '@stylistic/type-annotation-spacing': 'off'
     }
   }
 )
