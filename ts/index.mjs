@@ -32,7 +32,7 @@ export default tseslint.config(
       '@stylistic/type-annotation-spacing': [
         'error',
         {
-          'before': false,
+          'before': true,
           'after': true,
           'overrides': {
             'arrow': {
