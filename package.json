@@ -39,7 +39,7 @@
     "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.9.0",
     "jiti": "^1.21.6",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.43",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-html": "^1.7.0",
     "postcss-input-range": "^5.0.0",
