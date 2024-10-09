@@ -2,7 +2,6 @@ import vue from './vue/index.mjs'
 import ts from './ts/index.mjs'
 
 import globals from 'globals'
-import { parser, parserOptions } from 'eslint-plugin-vue/lib/configs/base'
 
 export default [
   { 
