@@ -17,7 +17,7 @@ module.exports = {
             'propList': ['font', 'font-size', 'line-height'],
         }),
         require('postcss-place'),
-        require('postcss-logical-viewport-units'),
+        require('@csstools/postcss-logical-viewport-units'),
         require('postcss-gap-properties'),
     ]
 }
