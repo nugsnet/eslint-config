@@ -14,19 +14,10 @@ module.exports = {
         require('postcss-scrollbar'),
         require('postcss-pxtorem')({
             'replace': true,
-            'propList': [
-                '*',
-                '!outline',
-                '!border-width',
-                '!border',
-                '!border-left',
-                '!border-right',
-                '!border-top',
-                '!border-bottom',
-                '!border-radius',
-                '!letter-spacing'
-            ]
+            'propList': ['font', 'font-size', 'line-height'],
         }),
-        require('postcss-place')
+        require('postcss-place'),
+        require('postcss-logical-viewport-units'),
+        require('postcss-gap-properties'),
     ]
 }
