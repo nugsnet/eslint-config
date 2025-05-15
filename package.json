@@ -1,6 +1,6 @@
 {
   "name": "@nugsnet/eslint-config",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
