@@ -25,6 +25,9 @@
       "stylelint": "^16.19.1"
     }
   },
+  "publishConfig": {
+    "@nugsnet:registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@babel/core": "^7.27.1",
     "@babel/eslint-parser": "^7.27.1",
