@@ -7,9 +7,11 @@ export default [
             'node_modules',
             'dist',
             'build',
+            'public',
             'bin',
             'bundle',
-            'src/assets'
+            'src/assets',
+            '.postcssrc.js',
         ]
     }
 ]
