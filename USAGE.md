@@ -12,13 +12,13 @@ pnpm add -D https://github.com/nugsnet/eslint-config.git
 npm i -D https://github.com/nugsnet/eslint-config.git
 ```
 
-Create `.eslintrc` file:
+Create `eslint.config.mjs` file:
 
-```json
-{
-    "root": true,
-    "extends": "airlab"
-}
+```mjs
+import config from '@nugsnet/eslint-config'
+
+export default config
+
 ```
 
 Create workflow file and add next settings to enable formatter:
