@@ -5,11 +5,11 @@
 Install package:
 
 ```sh
-pnpm add -D https://github.com/nugsnet/eslint-config.git
+pnpm add -D @nugsnet/eslint-config
 ```
 
 ```sh
-npm i -D https://github.com/nugsnet/eslint-config.git
+npm i -D @nugsnet/eslint-config
 ```
 
 Create `eslint.config.mjs` file:
