@@ -29,7 +29,7 @@
     "@nugsnet:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@babel/core": "^7.27.1",
+    "@babel/core": "^7.28.0",
     "@babel/eslint-parser": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
     "@csstools/postcss-logical-viewport-units": "^3.0.3",
