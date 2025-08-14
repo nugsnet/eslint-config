@@ -1,34 +1,32 @@
-name: Node.js Package
-
+name: nugs Eslint Config
 on:
   release:
     types: [created]
   workflow_dispatch:
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v4
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          version: 10
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
-          registry-url: https://npm.pkg.github.com/
-          cache: 'pnpm'
-      - name: Install dependencies
+          node-version: 24
+          cache: "pnpm"
+      - name: Authorize GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> ~/.npmrc
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
         run: |-
-          pnpm i --frozen-lockfile  
-          pnpm publish --no-git-checks
-
-
+          pnpm i --frozen-lockfile
+      - name: Build
+        shell: bash
+        run: |-
+          npx tsc --noEmit && pnpm run build
+      - name: Publish
+        run: pnpm publish --no-git-checks
