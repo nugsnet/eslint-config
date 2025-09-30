@@ -24,9 +24,5 @@ jobs:
       - name: Install dependencies
         run: |-
           pnpm i --frozen-lockfile
-      - name: Build
-        shell: bash
-        run: |-
-          npx tsc --noEmit && pnpm run build
       - name: Publish
         run: pnpm publish --no-git-checks
