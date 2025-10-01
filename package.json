@@ -40,7 +40,7 @@
     "eslint": "^9.36.0",
     "eslint-plugin-vue": "^10.5.0",
     "globals": "^16.4.0",
-    "jiti": "^2.6.0",
+    "jiti": "^2.6.1",
     "postcss": "^8.5.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-gap-properties": "^6.0.0",
