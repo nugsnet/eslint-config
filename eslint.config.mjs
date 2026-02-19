@@ -1,9 +1,12 @@
 import vue from './vue/index.mjs'
 import ts from './ts/index.mjs'
 
+
+import { defineConfig } from 'eslint/config'
+
 import globals from 'globals'
 
-export default [
+export default defineConfig(...[
   { 
     files: ['**/*.{js,mjs,cjs,ts,tsx,mts,vue}'],
     languageOptions: { 
@@ -98,4 +101,4 @@ export default [
       '@typescript-eslint/no-unused-expressions': 'off'
     }
   }
-]
+])

@@ -1,11 +1,11 @@
 import eslint from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import stylistic from '@stylistic/eslint-plugin'
 import tseslint from 'typescript-eslint'
 
-
-export default tseslint.config(
+export default defineConfig(
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   {
     files: ['**/*.{ts,tsx,mts}'],
     plugins: {
