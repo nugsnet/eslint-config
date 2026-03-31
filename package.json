@@ -1,6 +1,6 @@
 {
   "name": "@nugsnet/eslint-config",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
@@ -21,8 +21,10 @@
   },
   "pnpm": {
     "overrides": {
+      "minimatch@3>brace-expansion": "1.1.13",
+      "minimatch@10>brace-expansion": "5.0.5",
       "postcss": "^8.5.8",
-      "stylelint": "^17.5.0"
+      "stylelint": "^17.6.0"
     }
   },
   "publishConfig": {
@@ -50,11 +52,11 @@
     "postcss-scss": "^4.0.9",
     "postcss-syntax": "^0.36.2",
     "sass-embedded": "^1.98.0",
-    "stylelint": "^17.5.0",
+    "stylelint": "^17.6.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-config-standard-vue": "^1.0.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.2",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.0",
     "vue-eslint-parser": "^10.4.0"
   }
 }
