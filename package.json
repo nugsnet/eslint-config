@@ -1,6 +1,6 @@
 {
   "name": "@nugsnet/eslint-config",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "description": "Eslint Config",
   "main": "index.mjs",
   "keywords": [
@@ -23,8 +23,8 @@
     "overrides": {
       "minimatch@3>brace-expansion": "1.1.13",
       "minimatch@10>brace-expansion": "5.0.5",
-      "postcss": "^8.5.8",
-      "stylelint": "^17.6.0"
+      "postcss": "^8.5.15",
+      "stylelint": "^17.11.1"
     }
   },
   "publishConfig": {
@@ -35,28 +35,28 @@
     "@csstools/postcss-logical-viewport-units": "^4.0.0",
     "@eslint/eslintrc": "^3.3.5",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "autoprefixer": "^10.4.27",
-    "eslint": "^10.1.0",
-    "eslint-plugin-vue": "^10.8.0",
-    "globals": "^17.4.0",
-    "jiti": "^2.6.1",
-    "postcss": "^8.5.8",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.4.0",
+    "eslint-plugin-vue": "^10.9.1",
+    "globals": "^17.6.0",
+    "jiti": "^2.7.0",
+    "postcss": "^8.5.15",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-gap-properties": "^7.0.0",
     "postcss-html": "^1.8.1",
     "postcss-input-range": "^6.0.0",
     "postcss-place": "^11.0.0",
-    "postcss-preset-env": "^11.2.0",
+    "postcss-preset-env": "^11.3.0",
     "postcss-pxtorem": "^6.1.0",
     "postcss-scrollbar": "^0.5.1",
     "postcss-scss": "^4.0.9",
     "postcss-syntax": "^0.36.2",
-    "sass-embedded": "^1.98.0",
-    "stylelint": "^17.6.0",
+    "sass-embedded": "^1.99.0",
+    "stylelint": "^17.11.1",
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-config-standard-vue": "^1.0.0",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4",
     "vue-eslint-parser": "^10.4.0"
   }
 }
