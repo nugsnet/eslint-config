@@ -33,7 +33,7 @@
     "eslint-plugin-vue": "^10.9.2",
     "globals": "^17.6.0",
     "jiti": "^2.7.0",
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.18",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-gap-properties": "^7.0.0",
     "postcss-html": "^1.8.1",
