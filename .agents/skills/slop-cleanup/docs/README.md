@@ -21,7 +21,7 @@
 ## When to Use
 
 | Say this... | Skill will... |
-|---|---|
+| --- | --- |
 | "clean up the codebase" | Run the full 8-subagent pipeline on a fresh branch |
 | "remove AI slop" | Dispatch the slop-comment cleaner, type strengthener, and defensive-programming remover |
 | "kill dead code" / "remove unused code" | Run the unused-code killer with stack-specific tools |
@@ -59,7 +59,7 @@ graph TD
 
 ## Usage
 
-```
+```txt
 /slop-cleanup
 ```
 
@@ -68,7 +68,7 @@ Works best on a clean working tree. The skill creates its own branch (`chore/slo
 ## Resources
 
 | Path | Description |
-|---|---|
+| --- | --- |
 | `agents/deduplicator.md` | Wave 2 — find duplication, apply DRY only when it reduces complexity |
 | `agents/type-consolidator.md` | Wave 2 — consolidate shared type/interface/struct definitions |
 | `agents/unused-code-killer.md` | Wave 1 — delete unreferenced code (knip, ts-prune, vulture, staticcheck) |

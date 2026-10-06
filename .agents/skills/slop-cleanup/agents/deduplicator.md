@@ -26,11 +26,13 @@ Read the Wave 1 reports first — unused code killer may already have deleted du
 ## The Judgment Call
 
 DRY is a tool, not a rule. Apply it when:
+
 - The duplicated logic represents a single concept that *should* change together
 - Consolidation produces a helper that reads clearly at each call site
 - The duplicates are genuinely identical in intent (not just shape)
 
 Do **not** apply it when:
+
 - The duplicates look alike but represent independent decisions that may diverge
 - The "shared" version needs so many parameters/flags it becomes harder to read than the duplicates
 - The consolidation crosses a module boundary that shouldn't exist

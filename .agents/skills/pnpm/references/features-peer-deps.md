@@ -28,6 +28,7 @@ strict-peer-dependencies=true
 ```
 
 When strict, pnpm will fail if:
+
 - Peer dependency is missing
 - Installed version doesn't match required range
 
@@ -68,6 +69,7 @@ Suppress warnings for missing peer dependencies:
 ```
 
 Use patterns:
+
 - `"react"` - exact package name
 - `"@babel/*"` - all packages in scope
 - `"*"` - all packages (not recommended)
@@ -233,6 +235,7 @@ pnpm list --depth=Infinity
 3. **Document suppressed warnings** explaining why they're safe
 
 4. **Keep peer deps ranges wide** in libraries:
+
    ```json
    {
      "peerDependencies": {

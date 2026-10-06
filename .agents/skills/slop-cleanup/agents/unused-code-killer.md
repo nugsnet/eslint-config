@@ -35,7 +35,7 @@ If none of these are available, fall back to a grep-based sweep: for each export
 Before deleting anything, each candidate must survive **every** check:
 
 1. **Not referenced by name anywhere in the repo** (including test files, config, JSON, templates, migrations).
-2. **Not exposed by a public API barrel** (index.ts, __init__.py, mod.rs) that external consumers may import. If the repo is a library, stop and ask — you may be deleting public API.
+2. **Not exposed by a public API barrel** (index.ts, **init**.py, mod.rs) that external consumers may import. If the repo is a library, stop and ask — you may be deleting public API.
 3. **Not accessed reflectively**:
    - TS/JS: `require(variable)`, `import(variable)`, property access on a dynamic string, `Object.keys(module)`
    - Python: `getattr`, `importlib`, `__all__`, plugin registries

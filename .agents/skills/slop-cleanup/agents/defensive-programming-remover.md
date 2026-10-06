@@ -26,6 +26,7 @@ Find `try/catch`, error-swallowing, unnecessary null checks, and fallback-return
 Error handling exists to handle errors *where you can do something about them*. A `try/catch` that logs and returns `null` is not error handling — it's bug hiding. Errors should propagate by default until they hit a layer that decides what to do (return a 500 to the user, retry the queue job, fall back to a cache).
 
 Equivalents by language:
+
 - **Python**: `try/except` (especially `except Exception: pass` or bare `except:`)
 - **Go**: `if err != nil { return nil }` — swallowing instead of propagating
 - **Rust**: `.unwrap_or_default()`, `let _ = ...`, `if let Err(_) = ...`

@@ -40,11 +40,13 @@ Then look for:
 ## The Merge Decision
 
 A type is a candidate for consolidation when:
+
 - The fields represent the same real-world entity at the same lifecycle stage
 - Merging would not force one caller to carry unused fields it doesn't need
 - The name accurately describes the merged shape
 
 A type should **stay separate** when:
+
 - It represents a different lifecycle/boundary (request vs. stored vs. response)
 - It carries different invariants (validated input vs. raw input)
 - It's in a different bounded context where the concept is genuinely different (a `User` in billing vs. `User` in auth)

@@ -4,7 +4,7 @@ Enables code linting for mixed Vue/Typescript, Typescript and JavaScript project
 
 ## How To
 
-How to use you can find [here](./USAGE.md)
+See the [usage guide](./USAGE.md).
 
 ## Development
 
