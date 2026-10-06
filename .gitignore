@@ -1,2 +1,5 @@
 node_modules
 .claude/settings.local.json
+
+# ExecPlans (PLANS.md) — never committed
+todo/

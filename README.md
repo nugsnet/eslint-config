@@ -5,3 +5,7 @@ Enables code linting for mixed Vue/Typescript, Typescript and JavaScript project
 ## How To
 
 How to use you can find [here](./USAGE.md)
+
+## Development
+
+All documentation is indexed in [docs/README.md](docs/README.md). Contributor rules live in [AGENTS.md](AGENTS.md); Feature-lane planning in [PLANS.md](PLANS.md).
